@@ -1,4 +1,79 @@
-@media screen and (min-width:980px)/* Desktop */{body{background: red;}}
-@media screen and (max-width:979px)/* Tablet */{body{background: blue;}}
-@media screen and (max-width:500px)/* Mobile */{body{background: green;}}
+@media screen and (min-width:980px)
+/* Desktop */
+{
+    body{
+        background: rgba(243, 186, 132, 0.527);
+    }
+}
 
+@media screen and (max-width:979px)
+/* Tablet */
+{
+    body
+    {
+        background: rgba(243, 186, 132, 0.527);
+    }
+}
+@media screen and (max-width:500px)
+/* Mobile */
+{
+    body
+    {
+        background: rgba(243, 186, 132, 0.527);
+    }
+}
+
+div{
+    max-width: 400px;
+    max-height: 30%;
+    padding-left: 20px;
+    margin: 20px;
+    background-color: rgba(243, 186, 132, 0.25);
+    border-color:rgba(243, 186, 132, 0.5);
+    border-radius: 50px;
+    border-width: 5px;
+    border-style: none none none solid;
+    text-align: center;
+
+}
+article{
+    max-width: 400px;
+    max-height: 30%;
+    padding-left: 20px;
+    margin: 20px;
+    background-color: rgba(243, 186, 132, 0.5);
+    border-radius: 50px;
+    border-width: 5px;
+    border-style: none none none solid;
+    text-align: center;
+}
+.topmenu{
+    align-items: center;
+    text-align: center;
+}
+.navigation{
+    align-items: center;
+    font-size: medium;
+    font-family: 'Source Code Pro', monospace;
+    padding: 20px 20px 20px 20px;
+}
+
+ /* unvisited link */
+ a:link {
+    color: maroon;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: maroon;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: maroon;
+  } 
