@@ -1,61 +1,134 @@
-@media screen and (min-width:980px)
-/* Desktop */
+
+@media screen and (min-width:980px)/* Desktop */
 {
     body{
+        font-family: 'Source Code Pro', monospace;
         background: rgba(243, 186, 132, 0.527);
+        margin: auto;
+    }
+    div{
+        margin: auto;
+        padding: 2px 2px 2px 2px;
+    }
+    article{
+        margin: 0px 0px 0px 0px;
+        padding: 2px 2px 2px 2px;
+    }
+    .entry{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-gap: 5px;
+        background-color: rgba(243, 186, 132, 0.5);
+        font-family: 'Source Code Pro', monospace;
+        margin: auto;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 5px;
+    }
+    .entry > h1{
+        font-size: 18px;
+        height: 35px;
+        margin: 0px;
+        min-width: auto;
+        padding-left: 5px;
+        grid-column: 1/ span 4;
+        grid-row: 1 / 2;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: bold;
+        text-align: left;
+      }
+
+    .entry > img{
+        padding-top: 0px;
+        margin-top: 2px;
+        max-height: 120px;
+        max-width: 120px;
+        padding-left: 5px;
+        margin-right: 10px;
+        width: auto;
+        grid-column: 1 / span 1;
+        grid-row: 2 / 3;
+      }
+    .entry > p {
+        padding-top: 0px;
+        padding-left: 5px;
+        margin-top: 2px;
+        margin-left: 10px;
+        min-width: auto;
+        grid-column: 2 / span 3;
+        grid-row: 2 / 3;
+        font-size: 12px;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: normal;
+        text-align: left;
+      }
+
+    h1{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h2{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 25px;
+        margin-bottom: 5px;
+    }
+
+    p{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: lighter;
+    }
+
+    footer{
+        font-family: 'Source Code Pro', monospace;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 5px;
+        margin-top: 50px;
+        background-color: rgba(243, 186, 132, 0.5);
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .nav-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        margin: auto;
+        padding-top:20px;
+        padding-bottom: 20px;
+        background-color: none;
+        border:seashell;
+        grid-template-columns: auto auto auto auto auto auto;
+        border-width: 10px;
+        border-color: black;
+        font-size: small;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    .nav-container > a{
+        text-align: center;
+    }
+
+    .page-content{
+        font-family: 'Source Code Pro', monospace;
+        max-width: 500px;
+        margin: auto;
     }
 }
 
-@media screen and (max-width:979px)
-/* Tablet */
-{
-    body
-    {
-        background: rgba(243, 186, 132, 0.527);
-    }
-}
-@media screen and (max-width:500px)
-/* Mobile */
-{
-    body
-    {
-        background: rgba(243, 186, 132, 0.527);
-    }
-}
-
-div{
-    max-width: 400px;
-    max-height: 30%;
-    padding-left: 20px;
-    margin: 20px;
-    background-color: rgba(243, 186, 132, 0.25);
-    border-color:rgba(243, 186, 132, 0.5);
-    border-radius: 50px;
-    border-width: 5px;
-    border-style: none none none solid;
-    text-align: center;
-
-}
-article{
-    max-width: 400px;
-    max-height: 30%;
-    padding-left: 20px;
-    margin: 20px;
-    background-color: rgba(243, 186, 132, 0.5);
-    border-radius: 50px;
-    border-width: 5px;
-    border-style: none none none solid;
-    text-align: center;
-}
-.topmenu{
-    align-items: center;
-    text-align: center;
-}
-.navigation{
-    align-items: center;
-    font-size: medium;
-    font-family: 'Source Code Pro', monospace;
-    padding: 20px 20px 20px 20px;
+.entry-image{
+    min-width: 100px;
+    max-width: 50%;
 }
 
  /* unvisited link */
@@ -70,7 +143,310 @@ article{
   
   /* mouse over link */
   a:hover {
-    color: hotpink;
+    color: chocolate;
+  }
+  
+  /* selected link */
+  a:active {
+    color: maroon;
+  } 
+
+  @media screen  and (max-width:979px)/* Tablet */
+{
+    body{
+        font-family: 'Source Code Pro', monospace;
+        background: rgba(243, 186, 132, 0.527);
+        margin: auto;
+    }
+    div{
+        margin: auto;
+        padding: 2px 2px 2px 2px;
+    }
+    article{
+        margin: 0px 0px 0px 0px;
+        padding: 2px 2px 2px 2px;
+    }
+    .entry{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-gap: 5px;
+        background-color: rgba(243, 186, 132, 0.5);
+        font-family: 'Source Code Pro', monospace;
+        margin: auto;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 5px;
+    }
+    .entry > h1{
+        font-size: 18px;
+        height: 35px;
+        margin: 0px;
+        min-width: auto;
+        padding-left: 5px;
+        grid-column: 1/ span 4;
+        grid-row: 1 / 2;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: bold;
+        text-align: left;
+      }
+
+    .entry > img{
+        padding-top: 0px;
+        margin-top: 2px;
+        max-height: 120px;
+        max-width: 120px;
+        padding-left: 5px;
+        margin-right: 10px;
+        width: auto;
+        grid-column: 1 / span 1;
+        grid-row: 2 / 3;
+      }
+    .entry > p {
+        padding-top: 0px;
+        padding-left: 5px;
+        margin-top: 2px;
+        margin-left: 10px;
+        min-width: auto;
+        grid-column: 2 / span 3;
+        grid-row: 2 / 3;
+        font-size: 12px;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: normal;
+        text-align: left;
+      }
+
+    h1{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h2{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 25px;
+        margin-bottom: 5px;
+    }
+
+    p{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: lighter;
+    }
+
+    footer{
+        font-family: 'Source Code Pro', monospace;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 5px;
+        margin-top: 50px;
+        background-color: rgba(243, 186, 132, 0.5);
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .nav-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        margin: auto;
+        padding-top:20px;
+        padding-bottom: 20px;
+        background-color: none;
+        border:seashell;
+        grid-template-columns: auto auto auto auto auto auto;
+        border-width: 10px;
+        border-color: black;
+        font-size: small;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    .nav-container > a{
+        text-align: center;
+    }
+
+    .page-content{
+        font-family: 'Source Code Pro', monospace;
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+.entry-image{
+    min-width: 100px;
+    max-width: 50%;
+}
+
+ /* unvisited link */
+ a:link {
+    color: maroon;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: maroon;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: chocolate;
+  }
+  
+  /* selected link */
+  a:active {
+    color: maroon;
+  } 
+
+@media screen and (max-width:500px)
+/* Mobile */
+{
+    body{
+        font-family: 'Source Code Pro', monospace;
+        background: rgba(243, 186, 132, 0.527);
+        margin: auto;
+    }
+    div{
+        margin: auto;
+        padding: 2px 2px 2px 2px;
+    }
+    article{
+        margin: 0px 0px 0px 0px;
+        padding: 2px 2px 2px 2px;
+    }
+    .entry{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-gap: 5px;
+        background-color: rgba(243, 186, 132, 0.5);
+        font-family: 'Source Code Pro', monospace;
+        margin: auto;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 5px;
+    }
+    .entry > h1{
+        font-size: 16px;
+        height: 35px;
+        margin: 0px;
+        min-width: auto;
+        padding-left: 5px;
+        grid-column: 1/ span 4;
+        grid-row: 1 / 2;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: bold;
+        text-align: left;
+      }
+
+    .entry > img{
+        padding-top: 0px;
+        margin-top: 2px;
+        max-height: 120px;
+        max-width: 120px;
+        padding-left: 5px;
+        margin-right: 10px;
+        width: auto;
+        grid-column: 1 / span 1;
+        grid-row: 2 / 3;
+      }
+    .entry > p {
+        padding-top: 0px;
+        padding-left: 5px;
+        margin-top: 2px;
+        margin-left: 12px;
+        min-width: auto;
+        grid-column: 2 / span 3;
+        grid-row: 2 / 3;
+        font-size: 10px;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: normal;
+        text-align: left;
+      }
+
+    h1{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h2{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 25px;
+        margin-bottom: 5px;
+    }
+
+    p{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: lighter;
+    }
+
+    footer{
+        font-family: 'Source Code Pro', monospace;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 5px;
+        margin-top: 50px;
+        background-color: rgba(243, 186, 132, 0.5);
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .nav-container{
+        font-family: 'Source Code Pro', monospace;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 5px;
+        margin-top: 50px;
+        background: rgba(243, 186, 132, 0.1);
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .nav-container > a{
+        text-align: center;
+    }
+
+    .page-content{
+        font-family: 'Source Code Pro', monospace;
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+.entry-image{
+    min-width: 100px;
+    max-width: 50%;
+}
+
+ /* unvisited link */
+ a:link {
+    color: maroon;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: maroon;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: chocolate;
   }
   
   /* selected link */
