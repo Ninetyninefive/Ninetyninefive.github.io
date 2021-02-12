@@ -9,6 +9,10 @@
         margin: auto;
         padding: 2px 2px 2px 2px;
     }
+    header{
+        margin: auto;
+        padding: 2px 2px 2px 2px;
+    }
     article{
         margin: 0px 0px 0px 0px;
         padding: 2px 2px 2px 2px;
@@ -77,11 +81,6 @@
         text-align: left;
         margin-left: 25px;
         margin-bottom: 5px;
-    }
-
-    p{
-
-        font-weight: lighter;
     }
 
     footer{
@@ -160,6 +159,10 @@
         margin: auto;
         padding: 2px 2px 2px 2px;
     }
+    header{
+        margin: auto;
+        padding: 2px 2px 2px 2px;
+    }
     article{
         margin: 0px 0px 0px 0px;
         padding: 2px 2px 2px 2px;
@@ -232,7 +235,6 @@
 
     p{
         font-family: 'Source Code Pro', monospace;
-        font-weight: lighter;
     }
 
     footer{
@@ -313,6 +315,10 @@
         margin: auto;
         padding: 2px 2px 2px 2px;
     }
+    header{
+        margin: auto;
+        padding: 2px 2px 2px 2px;
+    }
     article{
         margin: 0px 0px 0px 0px;
         padding: 2px 2px 2px 2px;
@@ -367,7 +373,6 @@
         grid-row: auto;
         font-size: 14px;
         font-family: 'Source Code Pro', monospace;
-        font-weight: normal;
         text-align: left;
       }
 
@@ -387,7 +392,7 @@
 
     p{
         font-family: 'Source Code Pro', monospace;
-        font-weight: lighter;
+        font-weight: normal;
     }
 
     footer{
@@ -405,7 +410,6 @@
     }
 
     .nav-container{
-        font-family: 'Source Code Pro', monospace;
         margin: auto;
         padding-left: 20px;
         padding-right: 20px;
@@ -423,7 +427,7 @@
     }
 
     .page-content{
-        font-family: 'Source Code Pro', monospace;
+
         max-width: 480px;
         margin: auto;
     }
@@ -434,22 +438,13 @@
     max-width: 50%;
 }
 
- /* unvisited link */
- a:link {
-    color: maroon;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: maroon;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: chocolate;
-  }
-  
-  /* selected link */
+  a:visited,
+  a:link,
   a:active {
     color: maroon;
-  } 
+}
+  
+  a:hover {
+    color: chocolate;
+}
+
